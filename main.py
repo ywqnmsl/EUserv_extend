@@ -129,11 +129,11 @@ if __name__ == "__main__":
         for k, v in SERVERS.items():
             if v:
                 if not renew(sessid, s, passwd_list[i], k):
-                    print("ServerID: %s Renew Error!" % k)
+                    print("Renew Error!")
                 else:
-                    print("ServerID: %s has been successfully renewed!" % k)
+                    print("has been successfully renewed!")
             else:
-                print("ServerID: %s does not need to be renewed" % k)
+                print("does not need to be renewed")
         time.sleep(15)
         check(sessid, s)
         time.sleep(5)
